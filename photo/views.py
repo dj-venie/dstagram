@@ -11,7 +11,7 @@ from django.shortcuts import redirect
 
 class PhotoUploadView(CreateView):
     model = Photo
-    fileds = ['photo','text']
+    fields = ['photo','text']
     template_name = 'photo/upload.html'
 
     def form_valid(self, form):
